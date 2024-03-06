@@ -1,0 +1,48 @@
+﻿<Page x:Class="Diplom.View.Home1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Diplom.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" 
+      d:DesignWidth="750"
+      Background="#D9D9D9"
+      Title="Home1">
+
+    <Grid>
+        <Rectangle Fill="#97C6C0"
+       Height="48"
+       VerticalAlignment="Top"
+       Margin="12,15,10,0" 
+       StrokeThickness="2" 
+       RadiusX="30" 
+       RadiusY="30"/>
+        <TextBlock Text="Введение"
+       Foreground="White"
+       FontSize="30"
+       HorizontalAlignment="Center"
+       Margin="0 20 0 0" 
+       FontFamily="Times New Roman">
+        </TextBlock>
+
+        
+            <TextBlock Width="700"
+     Height="320" Margin="0 60 0 0" 
+     FontSize="17"
+     TextWrapping="Wrap">
+<Run FontWeight="Bold"> Инженерная техническая поддержка и сопровождение информационных систем (ИС)</Run>
+<Run>  включает в себя широкий спектр деятельностей, направленных на обеспечение бесперебойной работы и эффективного функционирования информационных систем в рабочем окружении. Это включает в себя следующие аспекты:</Run>
+<LineBreak/>
+<Run FontWeight="Bold"> 1. Поддержка пользователей:</Run>
+<Run>  Решение технических проблем, возникающих у пользователей при работе с системой. Это может включать в себя консультации, решение технических ошибок, а также помощь в использовании функционала системы.</Run>
+<Run FontWeight="Bold">2. Техническое обслуживание:</Run>
+<Run> Проведение регулярного технического обслуживания системы, включая установку обновлений, патчей, а также мониторинг состояния аппаратного и программного обеспечения.</Run>
+<LineBreak/>
+<Run FontWeight="Bold">3.Развитие и модернизация:</Run>
+<Run>Постоянное совершенствование системы, добавление новых функций, улучшение производительности и безопасности, а также адаптация системы к изменяющимся потребностям бизнеса.</Run>
+
+            </TextBlock>
+       
+    </Grid>
+</Page>

@@ -1,0 +1,77 @@
+﻿<Page x:Class="Diplom.View.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Diplom.View"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="800"
+      Title="MainPage">
+
+    <Grid Background="#35565f">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="250"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="#518d95">
+            <Image Source="/Images/book (1).png" 
+                   Margin="270,19,-221,10" />
+
+            <Rectangle Width="40" Height="250" 
+                       HorizontalAlignment="Left"
+                       Margin="40 0 0 0" Fill="#65aeb7"/>
+            <TextBlock Margin="0 0 200 0" 
+                       FontSize="36" 
+                       Foreground="White"
+                       HorizontalAlignment="Center" 
+                       VerticalAlignment="Center" Background="#00000000" FontFamily="Times New Roman" Cursor="">
+                Инженерная техническая
+                <LineBreak/>
+                поддержка 
+                <LineBreak/>
+                и сопровождение ИС
+            </TextBlock>
+            
+        </Grid>
+        <Grid Grid.Row="1" Background="#3d747b">
+            <TextBlock Margin="40 0 0 0"
+                       FontSize="25"
+                       Foreground="White"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Center" FontFamily="Times New Roman">
+                Интерактивное методическое
+                <LineBreak/>
+                пособие
+            </TextBlock>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0,0" StartPoint="1,1.200">
+                    <GradientStop Color="#407981" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="#FF4A8088" Offset="0.387"/>
+                    <GradientStop Color="#FE6F959C" Offset="0.635"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Button Content="Читать"
+                    x:Name="BtnLogin"
+                    Click="BtnLogin_Click"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="30"
+                    Background="#3d747b"
+                    Foreground="White"
+                    BorderBrush="Black"
+                    BorderThickness="1.5" FontFamily="Times New Roman" Height="56" Width="260">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="2"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
+    </Grid>
+</Page>
