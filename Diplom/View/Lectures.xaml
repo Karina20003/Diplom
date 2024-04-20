@@ -5,22 +5,21 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Diplom.View"
       mc:Ignorable="d" 
-      d:DesignHeight="400" 
-      d:DesignWidth="750"
-      Title="Lectures"
-      Background="#D9D9D9">
-
-    <Grid>
+      d:DesignHeight="550" 
+      d:DesignWidth="1000"
+      Title="Lectures">
+    <Border CornerRadius="0 0 50 0" Background="#D9D9D9">
+        <Grid>
         <Rectangle Fill="#97C6C0"
-           Height="60"
-                   Width="360"
+           Height="85"
+           Width="450"
            VerticalAlignment="Top"
-           Margin="12,15,378,0" 
+           Margin="34,25,516,0" 
            StrokeThickness="2" 
            RadiusX="30" 
            RadiusY="30"/>
-        <TextBlock FontSize="13" 
-           Margin="32,25,384,325"
+        <TextBlock FontSize="15" 
+           Margin="62,46,655,437"
            FontWeight="Bold">
     Лекция 1
     <LineBreak/>
@@ -29,120 +28,124 @@
         <Button Content="Читать"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
-                Margin="275,25,0,0"
-                Width="80"
-                Height="40"
-                FontSize="15" 
+                Margin="351,42,0,0"
+                Width="110"
+                Height="50"
+                FontSize="20" 
                 Background="#FF5DADB3" 
                 BorderBrush="#FF5DADB3"
                 BorderThickness="15"
                 Click="Button_Click"/>
         <Rectangle Fill="#97C6C0"
-                   Height="60"
-                   Width="360"
+                   Height="85"
+                   Width="450"
                    VerticalAlignment="Top"
-                   Margin="380,15,10,0" 
+                   Margin="520,25,30,0" 
                    StrokeThickness="2" 
                    RadiusX="30" 
                    RadiusY="30"/>
         <Button Content="Читать"
         HorizontalAlignment="Left"
         VerticalAlignment="Top"
-        Margin="643,25,0,0"
-        Width="80"
-        Height="40"
-        FontSize="15" 
+        Margin="835,42,0,0"
+        Width="110"
+Height="50"
+        FontSize="20" 
         Background="#FF5DADB3" 
         BorderBrush="#FF5DADB3"
         BorderThickness="15"/>
-        <TextBlock FontSize="13" 
-       Margin="397,25,145,325"
+        <TextBlock FontSize="15" 
+       Margin="544,45,179,437"
        FontWeight="Bold">
 Лекция 6
 <LineBreak/>
 Отчет об ошибках системы
         </TextBlock>
         <Rectangle Fill="#97C6C0"
-           Height="60"
+           Height="85"
+                   Width="450"
            VerticalAlignment="Top"
-           Margin="12,95,378,0" 
+           Margin="34,130,516,0" 
            StrokeThickness="2" 
            RadiusX="30" 
            RadiusY="30"/>
         <Button Content="Читать"
         HorizontalAlignment="Left"
         VerticalAlignment="Top"
-        Margin="275,105,0,0"
-        Width="80"
-        Height="40"
-        FontSize="15" 
+        Margin="351,148,0,0"
+        Width="110"
+        Height="50"
+        FontSize="20" 
         Background="#FF5DADB3" 
         BorderBrush="#FF5DADB3"
         BorderThickness="15"/>
-        <TextBlock FontSize="13" 
-       Margin="28,105,509,245"
+        <TextBlock FontSize="15" 
+       Margin="62,152,635,318"
        FontWeight="Bold">
 Лекция 2
 <LineBreak/>
 Средства разработки программ
         </TextBlock>
         <Rectangle Fill="#97C6C0"
-                   Height="60"
+                   Height="85"
+                   Width="450"
                    VerticalAlignment="Top"
-                   Margin="380,95,10,0" 
+                   Margin="520,130,30,0" 
                    StrokeThickness="2" 
                    RadiusX="30" 
                    RadiusY="30"/>
         <Button Content="Читать"
         HorizontalAlignment="Left"
         VerticalAlignment="Top"
-        Margin="643,105,0,0"
-        Width="80"
-        Height="40"
-        FontSize="15" 
+        Margin="835,148,0,0"
+        Width="110"
+        Height="50"
+        FontSize="20" 
         Background="#FF5DADB3" 
         BorderBrush="#FF5DADB3"
         BorderThickness="15"/>
-        <TextBlock FontSize="13" 
-       Margin="397,105,125,245"
+        <TextBlock FontSize="15" 
+       Margin="544,154,180,343"
        FontWeight="Bold">
 Лекция 7
 <LineBreak/>
 Методы тестирования приложений
         </TextBlock>
         <Rectangle Fill="#97C6C0"
-           Height="60"
-           VerticalAlignment="Top"
-           Margin="12,175,378,0" 
+           Height="86"
+           Width="450"
+           VerticalAlignment="Center"
+           Margin="34,0,516,0" 
            StrokeThickness="2" 
            RadiusX="30" 
            RadiusY="30"/>
         <Button Content="Читать"
         HorizontalAlignment="Left"
-        VerticalAlignment="Top"
-        Margin="275,185,0,0"
-        Width="80"
-        Height="40"
-        FontSize="15" 
+        VerticalAlignment="Center"
+        Margin="351,0,0,0"
+        Width="110"
+        Height="50"
+        FontSize="20" 
         Background="#FF5DADB3" 
         BorderBrush="#FF5DADB3"
         BorderThickness="15"/>
-        <TextBlock FontSize="13" 
-       Margin="32,185,533,165"
+        <TextBlock FontSize="15" 
+       Margin="62,256,503,247"
        FontWeight="Bold">
 Лекция 3
 <LineBreak/>
 Документирование ПС
         </TextBlock>
         <Rectangle Fill="#97C6C0"
-   Height="60"
+   Height="85"
+                   Width="450"
    VerticalAlignment="Top"
-   Margin="12,253,378,0" 
+   Margin="34,337,516,0" 
    StrokeThickness="2" 
    RadiusX="30" 
    RadiusY="30"/>
-        <TextBlock FontSize="13" 
-       Margin="32,263,522,87"
+        <TextBlock FontSize="15" 
+       Margin="62,360,492,140"
        FontWeight="Bold">
 Лекция 4
 <LineBreak/>
@@ -151,46 +154,48 @@
         <Button Content="Читать"
  HorizontalAlignment="Left"
  VerticalAlignment="Top"
- Margin="275,263,0,0"
- Width="80"
- Height="40"
- FontSize="15" 
+ Margin="351,354,0,0"
+ Width="110"
+Height="50"
+ FontSize="20" 
  Background="#FF5DADB3" 
  BorderBrush="#FF5DADB3"
  BorderThickness="15"/>
         <Rectangle Fill="#97C6C0"
-   Height="60"
+   Height="85"
+                   Width="450"
    VerticalAlignment="Top"
-   Margin="12,330,378,0" 
+   Margin="34,440,516,0" 
    StrokeThickness="2" 
    RadiusX="30" 
    RadiusY="30"/>
-        <TextBlock FontSize="13" 
-       Margin="32,340,522,10"
+        <TextBlock FontSize="15" 
+       Margin="62,463,492,26"
        FontWeight="Bold">
 Лекция 5    
 <LineBreak/>
 Обеспечение безопасности
         </TextBlock>
         <Rectangle Fill="#97C6C0"
-   Height="60"
-   VerticalAlignment="Top"
-   Margin="380,175,10,0" 
+   Height="85"
+         Width="450"
+   VerticalAlignment="Center"
+   Margin="520,0,30,0" 
    StrokeThickness="2" 
    RadiusX="30" 
    RadiusY="30"/>
         <Button Content="Читать"
  HorizontalAlignment="Left"
  VerticalAlignment="Top"
- Margin="275,340,0,0"
- Width="80"
- Height="40"
- FontSize="15" 
+ Margin="351,458,0,0"
+ Width="110"
+Height="50"
+ FontSize="20" 
  Background="#FF5DADB3" 
  BorderBrush="#FF5DADB3"
  BorderThickness="15"/>
-        <TextBlock FontSize="13" 
-       Margin="397,185,157,165"
+        <TextBlock FontSize="15" 
+       Margin="544,256,10,247"
        FontWeight="Bold">
 Лекция 8   
 <LineBreak/>
@@ -198,23 +203,24 @@
         </TextBlock>
         <Button Content="Читать"
  HorizontalAlignment="Left"
- VerticalAlignment="Top"
- Margin="643,185,0,0"
- Width="80"
- Height="40"
- FontSize="15" 
+ VerticalAlignment="Center"
+ Margin="835,0,0,0"
+ Width="110"
+Height="50"
+ FontSize="20" 
  Background="#FF5DADB3" 
  BorderBrush="#FF5DADB3"
  BorderThickness="15"/>
         <Rectangle Fill="#97C6C0"
-   Height="60"
+   Height="85"
+                   Width="450"
    VerticalAlignment="Top"
-   Margin="380,253,10,0" 
+   Margin="520,337,30,0" 
    StrokeThickness="2" 
    RadiusX="30" 
    RadiusY="30"/>
-        <TextBlock FontSize="13" 
-       Margin="397,263,112,87"
+        <TextBlock FontSize="15" 
+       Margin="544,360,-35,121"
        FontWeight="Bold">
 Лекция 9    
 <LineBreak/>
@@ -223,22 +229,20 @@
         <Button Content="Читать"
  HorizontalAlignment="Left"
  VerticalAlignment="Top"
- Margin="643,263,0,0"
- Width="80"
- Height="40"
- FontSize="15" 
+ Margin="835,354,0,0"
+Width="110"
+Height="50"
+ FontSize="20" 
  Background="#FF5DADB3" 
  BorderBrush="#FF5DADB3"
  BorderThickness="15"/>
         <Rectangle Fill="#97C6C0"
-   Height="60"
-   VerticalAlignment="Top"
-   Margin="380,330,10,0" 
+   Margin="520,440,30,25" 
    StrokeThickness="2" 
    RadiusX="30" 
    RadiusY="30"/>
-        <TextBlock FontSize="13" 
-       Margin="397,340,157,10"
+        <TextBlock FontSize="15" 
+       Margin="544,463,10,24"
        FontWeight="Bold">
 Лекция 10    
 <LineBreak/>
@@ -247,12 +251,13 @@
         <Button Content="Читать"
  HorizontalAlignment="Left"
  VerticalAlignment="Top"
- Margin="643,340,0,0"
- Width="80"
- Height="40"
- FontSize="15" 
+ Margin="835,458,0,0"
+ Width="110"
+ Height="50"
+ FontSize="20" 
  Background="#FF5DADB3" 
  BorderBrush="#FF5DADB3"
  BorderThickness="15"/>
     </Grid>
+    </Border>
 </Page>

@@ -6,9 +6,9 @@
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       xmlns:local="clr-namespace:Diplom.View"
       mc:Ignorable="d" 
-      d:DesignHeight="400"
-      d:DesignWidth="750"
-      Background="#D9D9D9"
+      d:DesignHeight="550"
+      d:DesignWidth="1000"
+      
       Title="Glossary">
     <Page.Resources>
         <Style TargetType="TextBox" x:Key="RoundedTextBox">
@@ -23,39 +23,40 @@
             </Setter>
         </Style>
     </Page.Resources>
-
-    <Grid>
+    <Border CornerRadius="0 0 50 0" Background="#D9D9D9">
+        <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <materialDesign:PackIcon 
             Kind="Magnify" 
-            Margin="240,0,0,0" 
-            Width="20"
-            Height="20"
+            Margin="380,17,0,0" 
+            Width="25"
+            Height="25"
             VerticalAlignment="Center" 
             HorizontalAlignment="Center"/>
 
-        <TextBox x:Name="SearchTextBox" Margin="12,0,0,0" 
+        <TextBox x:Name="SearchTextBox" Margin="12,15,0,0" 
                  VerticalAlignment="Center" 
                  HorizontalAlignment="Left"
                  BorderBrush="#89F1C908"
                  Style="{StaticResource RoundedTextBox}"
-                 Height="30"
-                 Width="500"
-                 FontSize="15"
+                 Height="40"
+                 Width="700"
+                 FontSize="25"
                  BorderThickness="2"
                  CaretBrush="{x:Null}" 
-                 Background="{x:Null}"/>
+                 Background="{x:Null}" 
+                 />
         <Button Grid.Row="0" 
-                Margin="521,9,0,9" 
+                Margin="727,14,0,4" 
                 HorizontalAlignment="Left" 
                 Content="Поиск" 
                 BorderBrush="#FF69A0A7"
                 BorderThickness="15"
-                
-                Background="#FF69A0A7"/>
+                Background="#FF69A0A7" 
+                Width="101"/>
         <ScrollViewer Grid.Row="1" x:Name="ContentScrollViewer">
             
             <TextBox x:Name="MainTextBox" 
@@ -111,4 +112,5 @@ Information tehnology — Software maintenance, ГОСТ Р ИСО/МЭК 14764-
 
         
     </Grid>
+    </Border>
 </Page>

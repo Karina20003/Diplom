@@ -6,152 +6,161 @@
       xmlns:local="clr-namespace:Diplom.View"
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       mc:Ignorable="d" 
-      d:DesignHeight="500" d:DesignWidth="800"
-      Title="Manual"
-      Background="#D9D9D9">
+      d:DesignHeight="700" d:DesignWidth="1100"
+      Title="Manual">
 
-    <Grid>
-        
-        <Grid.RowDefinitions>
-            <RowDefinition Height="100"/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
+    <Border Background="#D9D9D9" CornerRadius="50"> 
+        <Grid>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="50"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
- <Frame x:Name="PageFrame"
-              Height="400"
-              Width="750"
-HorizontalAlignment="Right"
-      VerticalAlignment="Bottom" 
-              Grid.Row="1"
-              Grid.Column="1"/>
-        <Grid Grid.Row="0"
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Frame x:Name="PageFrame"
+               Height="550"
+               Width="1000"
+               HorizontalAlignment="Right"
+               VerticalAlignment="Bottom" 
+               Grid.Row="1"
+               Grid.Column="1"/>
+            <Border Grid.Row="0" CornerRadius="50 0 0 0"
               Background="#518D95">
 
-        </Grid>
-       
-        <Grid Grid.Row="1"
-              Background="#518D95">
-            <materialDesign:PackIcon Kind="Home"
-                                     Width="30" 
+            </Border>
+
+            <Border Grid.Row="1"
+              Background="#518D95" CornerRadius="0 0 0 50">
+                <Grid >
+                    <materialDesign:PackIcon Kind="Home"
+                                     ToolTip="Главная"
+                                     Width="50" 
                                      HorizontalAlignment="Center"
-                                     Height="40"
+                                     Foreground="White"
+                                     Height="50"
                                      MouseDown="PackIcon_MouseDown_1"
                                      Cursor="Hand"/>
-            <materialDesign:PackIcon Kind="BookOpenPageVariantOutline" 
-                                     HorizontalAlignment="Center" 
+                    <materialDesign:PackIcon Kind="BookOpenPageVariantOutline" 
+                                     HorizontalAlignment="Center"
                                      MouseDown="PackIcon_MouseDown_3"
-                                     Margin="0,40,0,0"
-                                     Width="30"
-                                     Height="40"
+                                     Foreground="White"
+                                     ToolTip="Лекции"
+                                     Margin="0,55,0,0"
+                                     Width="50"
+                                     Height="50"
                                      Cursor="Hand"/>
-            <materialDesign:PackIcon Kind="BookEdit" 
-                                     HorizontalAlignment="Center" 
-                                     Margin="0,80,0,0" 
-                                     Width="30"
-                                     Height="40"
+                    <materialDesign:PackIcon Kind="BookEdit" 
+                                     HorizontalAlignment="Center"
+                                     Foreground="White"
+                                     Margin="0,115,0,0"
+                                     ToolTip="Тесты"
+                                     Width="50"
+                                     Height="50"
                                      MouseDown="PackIcon_MouseDown"
                                      Cursor="Hand"/>
-            <materialDesign:PackIcon Kind="AlphabeticalVariant" 
-                                     Width="30"
-                                     Height="40" 
+                    <materialDesign:PackIcon Kind="AlphabeticalVariant" 
+                                     ToolTip="Глоссарий"
+                                     Foreground="White"
+                                     Width="50"
+                                     Height="50" 
                                      HorizontalAlignment="Center"
                                      MouseDown="PackIcon_MouseDown_2"
-                                     Margin="0,120,0,0"
+                                     Margin="0,170,0,0"
                                      Cursor="Hand"/>
-            <Button Margin="0,352,0,8"
-                    Height="40" 
-                    Background="{x:Null}" 
-                    Foreground="Black" 
-                    BorderBrush="{x:Null}" 
-                    Click="Button_Click">
-                <Image Source="/Images/avatar.png"
-                       Width="32"
-                       Height="30"
-                       VerticalAlignment="Center"
-                       HorizontalAlignment="Center"
-                       />
-            </Button>
+                    <materialDesign:PackIcon Kind="Cogs"
+                                     Foreground="White"
+                                     Width="50"
+                                     Height="50" 
+                                     HorizontalAlignment="Center"
+                                     VerticalAlignment="Bottom"
+                                     Margin="0,0,0,95"
+                                     MouseDown="PackIcon_MouseDown_4"
+                                     Cursor="Hand"/>
+                    <Border HorizontalAlignment="Center"
+        VerticalAlignment="Bottom"
+        Margin="0 0 0 20"
+        CornerRadius="50"
+        BorderBrush="White"
+        ToolTip="Профиль"
+        Padding="2"
+        BorderThickness="1">
+                        <materialDesign:PackIcon Kind="Person" 
+                         
+                         Width="50"
+                         Cursor="Hand"
+                         Foreground="White"
+                         Effect="{StaticResource MaterialDesignElevationShadow24}"
+                         MouseDown="PackIcon_MouseDown_5"
+                         Height="50"/>
+                    </Border>
 
-            <materialDesign:ColorZone
-                Padding="7"
-                Mode="PrimaryLight" 
-                Margin="0,-100,0,0" 
-                Height="50" 
-                Background="{x:Null}">
-                <StackPanel
-                    Orientation="Horizontal">
-                    <ToggleButton
-                        Style="{StaticResource MaterialDesignHamburgerToggleButton}" 
-                        RenderTransformOrigin="-1.32,0.552" 
-                        BorderBrush="{x:Null}"
-                        Name="ToggleMenu_Click" 
-                        Click="ToggleMenu_Click_1"
-                        Focusable="False"/>
-                </StackPanel>
-            </materialDesign:ColorZone>
-        </Grid>
 
-        <Grid Grid.Column="1" 
+                </Grid>
+            </Border>
+
+            <Border CornerRadius="0 50 0 0" Grid.Column="1" 
               Background="#FF518D95">
 
-            <Image Source="/Images/book (1).png" 
-                   Margin="-296,7,328,7" />
-        </Grid>
+                <Image Source="/Images/book (1).png" 
+                   Height="130"
+                   Width="130"
+                   Margin="-88,0,938,0" />
+            </Border>
 
-        <TextBlock HorizontalAlignment="Left"
-                   VerticalAlignment="Top"
-                   FontSize="23"
+            <TextBlock HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontSize="30"
                    Foreground="White" 
-                   TextAlignment="Right"
+                   TextAlignment="Center"
                    FontFamily="Times New Roman" 
                    FontWeight="Bold" 
-                   Grid.Column="1" 
-                   Margin="111,37,0,0">
+                   Grid.Column="1">
             Интерактивное методическое пособие
             <LineBreak/>
-            “Инженерная техническая поддержка и сопровождение ИС”
-        </TextBlock>
-        
-        <Grid Grid.Row="1"
+            "Инженерная техническая поддержка и сопровождение ИС"
+            </TextBlock>
+
+            <Grid Grid.Row="1"
               Grid.Column="1">
-            
-            <Border x:Name="menuBorder" 
+
+                <Border x:Name="menuBorder" 
                     Width="0" 
                     Background="#FF518D95"
                     VerticalAlignment="Stretch" 
                     HorizontalAlignment="Left" 
                     Margin="0,0,5,0">
-                <StackPanel Cursor="Hand">
-                    <Button Content="Главная"
+                    <StackPanel Cursor="Hand">
+                        <Button Content="Главная"
                             Click="Button_Click_4"
                             Height="40" 
                             Cursor="Hand" 
                             Background="{x:Null}" 
                             BorderBrush="{x:Null}"/>
-                    <Button Content="Лекции"
+                        <Button Content="Лекции"
                             Click="Button_Click_3"
                             Height="40" 
                             Cursor="Hand" 
                             Background="{x:Null}" 
                             BorderBrush="{x:Null}"/>
-                    <Button Content="Тесты" 
+                        <Button Content="Тесты" 
                             Click="Button_Click_1" 
                             Height="40" 
                             Background="{x:Null}" 
                             BorderBrush="{x:Null}"/>
-                    <Button Content="Глоссарий" 
+                        <Button Content="Глоссарий" 
                             Click="Button_Click_2" 
                             Height="40" Cursor="Hand" 
                             Background="{x:Null}" 
                             BorderBrush="{x:Null}"/>
-                </StackPanel>
-            </Border>
-            
-        </Grid>
+                    </StackPanel>
+                </Border>
 
-    </Grid>
+            </Grid>
+
+        </Grid>
+    </Border>
 </Page>

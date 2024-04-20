@@ -6,12 +6,13 @@
       xmlns:local="clr-namespace:Diplom.View"
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       mc:Ignorable="d" 
-      d:DesignHeight="500" d:DesignWidth="800"
+      d:DesignHeight="700" 
+      d:DesignWidth="1100"
       Title="Registration">
+    <Border CornerRadius="50">
 
-    <Grid>
-        <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        <Border.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="#407981" Offset="0.156"/>
                 <GradientStop Color="White" Offset="1"/>
                 <GradientStop Color="#FF619097" Offset="0.532"/>
@@ -19,10 +20,11 @@
                 <GradientStop Color="#FF769FA5" Offset="0.753"/>
                 <GradientStop Color="#FF4C8189" Offset="0.342"/>
             </LinearGradientBrush>
-        </Grid.Background>
-        <Grid.ColumnDefinitions>
+        </Border.Background>
+            <Grid>
+                <Grid.ColumnDefinitions>
             <ColumnDefinition Width="50"/>
-            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="100"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
@@ -31,22 +33,44 @@
         </Grid>
 
         <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="423*"/>
+            </Grid.RowDefinitions>
             <TextBlock Text="Регистрация"
                        HorizontalAlignment="Center"
-                       VerticalAlignment="Center"
-                       Margin="0 0 0 280"
+                       VerticalAlignment="Top"
+                       Margin="0,118,0,0"
                        Foreground="White"
-                       FontSize="50" 
+                       FontSize="100" 
                        FontFamily="Times New Roman">
             </TextBlock>
-
+            <Border Background="#FF3D747B"
+                    CornerRadius="40"
+                Margin="0,490,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top"
+                    Height="80"
+                    Width="400">
+                <Button Content="Зарегистрироваться"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                    FontSize="30" 
+                    Background="Transparent"  
+                        BorderBrush="{x:Null}" 
+                        Height="64"/>
+            </Border>
             <TextBox
   VerticalAlignment="Top"
   materialDesign:HintAssist.Hint="Login"
                 materialDesign:HintAssist.Foreground="Black"
                 materialDesign:TextFieldAssist.UnderlineBrush="Black"
   Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
-                Margin="100,175,100,0" Height="55" FontSize="20" FontFamily="Times New Roman" CaretBrush="{x:Null}" SelectionBrush="{x:Null}" />
+                Margin="100,246,100,0" 
+                Height="82" 
+                FontSize="25" 
+                FontFamily="Times New Roman" 
+                CaretBrush="{x:Null}" 
+                SelectionBrush="{x:Null}" />
 
             <PasswordBox
 x:Name="FloatingPasswordBox"
@@ -54,31 +78,25 @@ materialDesign:HintAssist.Foreground="Black"
 materialDesign:HintAssist.Hint="Password" 
 materialDesign:TextFieldAssist.UnderlineBrush="Black"
 Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"
-              Margin="100,250,100,191" FontFamily="Times New Roman" FontSize="20"/>
-            <Border Background="#FF3D747B"
-                    CornerRadius="30"
-                Margin="0,344,0,0"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Top" Width="326">
-            <Button Content="Зарегистрироваться"
-                    FontSize="30" 
-                    Background="Transparent"  BorderBrush="{x:Null}" Height="64">
-            </Button>
-        </Border>
-            <materialDesign:PackIcon Kind="KeyOutline"
-                                     Margin="44,267,0,0" Height="35" Width="38"/>
+              Margin="100,350,100,268"
+                Height="82"
+                FontFamily="Times New Roman" 
+                FontSize="25"/>
 
-            <materialDesign:PackIcon Kind="Account" Margin="44,195,0,0" Height="35" Width="38" />
+            <materialDesign:PackIcon Kind="KeyOutline"
+                                     Margin="32,262,0,0" Height="50" Width="50"/>
+
+            <materialDesign:PackIcon Kind="Account" Margin="32,366,0,0" Height="50" Width="50" />
 
             <TextBlock 
                 
 
                         HorizontalAlignment="Center"
-                        VerticalAlignment="Center"
-                        Margin="0 370 0 0"
+                        VerticalAlignment="Top"
+                        Margin="0,600,0,0"
                         Foreground="White"
-                        FontSize="15" 
-                        FontFamily="Times New Roman">
+                        FontSize="25" 
+                        FontFamily="Times New Roman" Grid.Row="1">
                 <Run Text="У вас есть аккаунт?" Foreground="White"/>
                 <Hyperlink Click="Hyperlink_Click">
                                     <Hyperlink.Style>
@@ -92,7 +110,7 @@ Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"
     </Style.Triggers>
 </Style>
             </Hyperlink.Style>
-                    <Run Text="Войти!" Foreground="DarkBlue">
+                    <Run Text="Войти!" Foreground="Black">
                         
                     </Run>
                 </Hyperlink>
@@ -100,4 +118,5 @@ Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"
             </TextBlock>
         </Grid>
     </Grid>
+    </Border>
 </Page>

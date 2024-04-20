@@ -88,7 +88,7 @@ namespace Diplom.View
 
         private void PackIcon_MouseDown_1(object sender, MouseButtonEventArgs e)
         {
-            FrameNavigate.FrameCore.Navigate(new Home());
+            FrameNavigate.FrameCore.Navigate(new Home1());
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
@@ -114,6 +114,16 @@ namespace Diplom.View
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
             FrameNavigate.FrameCore.Navigate(new Home1());
+        }
+
+        private void PackIcon_MouseDown_4(object sender, MouseButtonEventArgs e)
+        {
+            FrameNavigate.FrameCore.Navigate(new Admin());
+        }
+
+        private void PackIcon_MouseDown_5(object sender, MouseButtonEventArgs e)
+        {
+            FrameNavigate.FrameCore.Navigate(new Account());
         }
     }
 }

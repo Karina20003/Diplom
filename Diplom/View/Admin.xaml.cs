@@ -16,20 +16,13 @@ using System.Windows.Shapes;
 namespace Diplom.View
 {
     /// <summary>
-    /// Логика взаимодействия для Glossary.xaml
+    /// Логика взаимодействия для Admin.xaml
     /// </summary>
-    public partial class Glossary : Page
+    public partial class Admin : Page
     {
-        public Glossary()
+        public Admin()
         {
             InitializeComponent();
         }
-
-        
     }
 }
-
-
-
-
-

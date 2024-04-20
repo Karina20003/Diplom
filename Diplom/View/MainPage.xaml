@@ -6,39 +6,47 @@
       xmlns:local="clr-namespace:Diplom.View"
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       mc:Ignorable="d" 
-      d:DesignHeight="500" d:DesignWidth="800"
+      d:DesignHeight="700" d:DesignWidth="1100"
       Title="MainPage">
 
-    <Grid Background="#35565f">
+
+    <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="250"/>
-            <RowDefinition Height="70"/>
+            <RowDefinition Height="350"/>
+            <RowDefinition Height="100"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <Grid Grid.Row="0" Background="#518d95">
-            <Image Source="/Images/book (1).png" 
-                   Margin="270,19,-221,10" />
+        <Border Grid.Row="0" Background="#518d95" CornerRadius="50 50 0 0">
+            <Grid>
+                <Image Source="/Images/book (1).png" 
+                   Margin="270,19,-221,10" 
+                   ToolTip="Разработала Толстошеева К.А."
+                   Effect="{StaticResource MaterialDesignElevationShadow12}"/>
 
-            <Rectangle Width="40" Height="250" 
+                <Rectangle Width="80" Height="348" 
                        HorizontalAlignment="Left"
                        Margin="40 0 0 0" Fill="#65aeb7"/>
-            <TextBlock Margin="0 0 200 0" 
-                       FontSize="36" 
+                <TextBlock Margin="0 0 400 0" 
+                       FontSize="40" 
                        Foreground="White"
                        HorizontalAlignment="Center" 
-                       VerticalAlignment="Center" Background="#00000000" FontFamily="Times New Roman" Cursor="">
+                       VerticalAlignment="Center" 
+                       Background="#00000000" 
+                       FontFamily="Times New Roman">
+                    
                 Инженерная техническая
                 <LineBreak/>
                 поддержка 
                 <LineBreak/>
                 и сопровождение ИС
-            </TextBlock>
-            
-        </Grid>
+                </TextBlock>
+
+            </Grid>
+        </Border>
         <Grid Grid.Row="1" Background="#3d747b">
             <TextBlock Margin="40 0 0 0"
-                       FontSize="25"
+                       FontSize="30"
                        Foreground="White"
                        HorizontalAlignment="Left"
                        VerticalAlignment="Center" FontFamily="Times New Roman">
@@ -47,15 +55,16 @@
                 пособие
             </TextBlock>
         </Grid>
-        <Grid Grid.Row="2">
-            <Grid.Background>
+
+        <Border Grid.Row="2" CornerRadius="0 0 50 50"> 
+            <Border.Background>
                 <LinearGradientBrush EndPoint="0,0" StartPoint="1,1.200">
                     <GradientStop Color="#407981" Offset="0"/>
                     <GradientStop Color="White" Offset="1"/>
                     <GradientStop Color="#FF4A8088" Offset="0.387"/>
                     <GradientStop Color="#FE6F959C" Offset="0.635"/>
                 </LinearGradientBrush>
-            </Grid.Background>
+            </Border.Background>
             <Button Content="Читать"
                     x:Name="BtnLogin"
                     Click="BtnLogin_Click"
@@ -64,14 +73,17 @@
                     FontSize="30"
                     Background="#3d747b"
                     Foreground="White"
-                    BorderBrush="Black"
-                    BorderThickness="1.5" FontFamily="Times New Roman" Height="56" Width="260">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="2"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
-        </Grid>
+                    BorderBrush="White"
+                    BorderThickness="1.5" FontFamily="Times New Roman" 
+                    Height="80" 
+                    Width="400">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="2"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+        </Border>
+        
     </Grid>
 </Page>

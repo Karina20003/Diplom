@@ -5,16 +5,14 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Diplom.View"
       mc:Ignorable="d" 
-      d:DesignHeight="400" 
-      d:DesignWidth="750"
-      Background="#D9D9D9"
+      d:DesignHeight="550" 
+      d:DesignWidth="1000"
       Title="Tests">
-
-    <Grid>
-
-        <Rectangle Fill="#97C6C0"
-                   Width="650"
-                   Height="80"
+    <Border CornerRadius="0 0 50 0" Background="#D9D9D9">
+        <Grid>
+            <Rectangle Fill="#97C6C0"
+                   Width="900"
+                   Height="120"
                    VerticalAlignment="Top"
                    Margin="0 50 0 0" 
                    StrokeThickness="2" 
@@ -22,40 +20,41 @@
                    RadiusY="30">
 
         </Rectangle>
-        <TextBlock FontSize="20" 
-                   Margin="78,63,430,287"
+        <TextBlock FontSize="25" 
+                   Margin="78,75,430,388"
                    FontWeight="Bold">
             Тест№1(10 вопросов)
             <LineBreak/>
             ИТП сопровождения ИС
         </TextBlock>
         <Rectangle Fill="#97C6C0"
-           Width="650"
-           Height="80"
+           Width="900"
+           Height="120"
            VerticalAlignment="Center"
-           Margin="50,0,50,0" 
+           HorizontalAlignment="Center"
            StrokeThickness="2" 
            RadiusX="30" 
            RadiusY="30">
         </Rectangle>
-        <TextBlock FontSize="20" 
-           Margin="78,173,285,177"
+        <TextBlock FontSize="25" 
+           Margin="78,240,285,236"
                    FontWeight="Bold">
     Тест№2(10 вопросов)
     <LineBreak/>
     Средства разработки программ
         </TextBlock>
         <Rectangle Fill="#97C6C0"
-           Width="650"
-           Height="80"
+           Width="900"
+           Height="120"
            VerticalAlignment="Top"
-           Margin="50,269,50,0" 
+           Margin="50,390,50,0" 
            StrokeThickness="2" 
            RadiusX="30" 
            RadiusY="30">
         </Rectangle>
-        <TextBlock FontSize="20" 
-           Margin="78,282,430,68"
+        <TextBlock FontSize="25" 
+           Margin="78,414,430,54"
+                   
                    FontWeight="Bold">
     Тест№3(10 вопросов)
     <LineBreak/>
@@ -64,10 +63,11 @@
         <Button Content="Начать"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
-                Margin="474,65,0,0"
-                Width="200"
-                Height="50"
-                FontSize="25" Background="#FF5DADB3" 
+                Margin="634,75,0,0"
+                Width="250"
+                Height="70"
+                FontSize="35" 
+                Background="#FF5DADB3" 
                 BorderBrush="#FF5DADB3"
                 BorderThickness="25"
                 Click="Button_Click"/>
@@ -75,23 +75,24 @@
         <Button Content="Начать"
         HorizontalAlignment="Left"
         VerticalAlignment="Center"
-        Margin="474,0,0,0"
-        Width="200"
-        Height="50"
-        FontSize="25" Background="#FF5DADB3" 
+        Margin="634,0,0,0"
+        Width="250"
+        Height="70"
+        FontSize="35" Background="#FF5DADB3" 
         BorderBrush="#FF5DADB3"
         BorderThickness="25"/>
 
         <Button Content="Начать"
         HorizontalAlignment="Left"
         VerticalAlignment="Top"
-        Margin="474,284,0,0"
-        Width="200"
-        Height="50"
-        FontSize="25" Background="#FF5DADB3" 
+        Margin="634,420,0,0"
+        Width="250"
+        Height="70"
+        FontSize="35" Background="#FF5DADB3" 
         BorderBrush="#FF5DADB3"
         BorderThickness="25"/>
 
 
     </Grid>
+    </Border>
 </Page>
